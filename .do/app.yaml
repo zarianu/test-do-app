@@ -1,0 +1,14 @@
+name: test-do-app
+region: ams
+static_sites:
+- environment_slug: html
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: zarianu/test-do-app
+  name: test-do-app
+  domains:
+  - domain: test-do.zalyan.net
+  routes:
+  - path: /
+
